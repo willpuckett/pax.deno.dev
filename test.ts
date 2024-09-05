@@ -1,4 +1,4 @@
-import { assertEquals } from "./deps.ts";
+import { assertEquals } from "@std/assert";
 import { tag } from "https://pax.deno.dev/kawarimidoll/deno-markup-tag";
 
 Deno.test("[health-check] import module", () => {

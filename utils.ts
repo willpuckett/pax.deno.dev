@@ -1,10 +1,11 @@
-import { Marked, tag as h } from "./deps.ts";
+import { tag as h } from "markup_tag";
+import { Marked } from "markdown";
 
 const readme = await Deno.readTextFile("./README.md");
 const corner = await Deno.readTextFile("./corner.html");
 const description = "Access the modules on GitHub via Deno Deploy🦕";
 const icon =
-  "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4e6.png";
+  "https://cdn.jsdelivr.net/gh/twitter/twemoji@v14.0.2/assets/72x72/1f4e6.png";
 const css = "https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css";
 const viewport = "width=device-width,initial-scale=1.0,minimum-scale=1.0";
 const index = "<!DOCTYPE html>" +
