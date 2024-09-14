@@ -20,7 +20,7 @@ async function handleConn(req: Request) {
       return new Response(JSON.stringify(init));
     }
   }
-  
+
   const res = new Response(body, init);
   await cache.put(req, res.clone());
   return res;
