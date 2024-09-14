@@ -28,12 +28,17 @@
     "@std/assert": "jsr:@std/assert@^1.0.3",
     "https://deno.land/std/encoding/_yaml/loader/loader.ts": "https://deno.land/std@0.179.0/encoding/_yaml/loader/loader.ts#=",
     "markup_tag": "https://deno.land/x/markup_tag@0.4.0/mod.ts",
-    "markdown": "https://deno.land/x/markdown@v2.0.0/mod.ts"
+    "markdown": "https://deno.land/x/markdown@v2.0.0/mod.ts",
+    "ssx/jsx-runtime": "https://deno.land/x/ssx@v0.1.1/jsx-runtime.ts"
   },
   "unstable": [
     "fmt-html",
     "fmt-css",
     "fmt-yaml",
     "fmt-component"
-  ]
+  ],
+  "compilerOptions": {
+    "jsx": "precompile",
+    "jsxImportSource": "ssx"
+  }
 }
