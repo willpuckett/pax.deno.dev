@@ -30,12 +30,6 @@
     "jsx": "precompile",
     "jsxImportSource": "ssx"
   },
-  "unstable": [
-    "fmt-html",
-    "fmt-css",
-    "fmt-yaml",
-    "fmt-component"
-  ],
   "fmt": {
     "exclude": [
       "cov_profile"
